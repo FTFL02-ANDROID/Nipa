@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Splash srceen -->
+    
+    <string name="app_name">FTFLHistoricalPlaces</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="splashTextView1">See Bangladesh</string>
+    <string name="splashTextView2">Know Bangladesh</string>
+    <string name="headerTextView">See top 10 Historical Places in Bangledesh</string>
+    <string name="addMoreTextView">Add more</string>
+    
+    <!--place detail -->
+    <string name="historicalDescriptionTv">Historical Description</string>
+    <string name="addressTv">Address</string>
+    <string name="districtTv">District</string>
+    <string name="weeklyCloseDayTv">Weekly Close Day</string>
+    <string name="dailyVisitTimeTv">Daily Visit Time</string>
+    <string name="latitudeTv">Latitude</string>
+    <string name="langitudeTv">Langitude</string>
+    <string name="googleMapLinkTV">Show location in Google Map</string>
+    
+    <!--add more place -->
+    <string name="addMorePlaceTv">Add more places</string>
+    <string name="saveButton">Save</string>
+    <string name="placeNameTv">Name of Place</string>
+    <string name="placeNameEditText">Enter the name of place</string>
+    <string name="historicalDescriptionEditText">Enter historical description</string>
+    <string name="addressEditText">Enter address</string>
+    <string name="districtEditText">Enter district</string>
+    <string name="weeklyCloseDayEditText">Enter weekly close day</string>
+    <string name="dailyVisitTimeEditText">Enter daily visit time</string>
+    <string name="latitudeEditText">Enter latitude</string>
+    <string name="langitudeEditText">Enter langitude</string>
+
+</resources>

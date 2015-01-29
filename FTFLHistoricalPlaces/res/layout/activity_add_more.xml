@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/addMorePlaceTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/addMorePlaceTv"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    
+        <ScrollView android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="10dp">
+        
+        <TextView android:id="@+id/placeNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/placeNameTv"/>
+        
+        <EditText android:id="@+id/placeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/placeNameEditText"/>
+        
+        <TextView android:id="@+id/historicalDescriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/historicalDescriptionTv"/>
+        
+        <EditText android:id="@+id/historicalDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/historicalDescriptionEditText"/>
+        
+        <TextView android:id="@+id/addressTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/addressTv"/>
+        
+        <EditText android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/addressEditText"/>
+        
+        <TextView android:id="@+id/districtTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/districtTv"/>
+        
+        <EditText android:id="@+id/districtEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/districtEditText"/>
+        
+        <TextView android:id="@+id/weeklyCloseDayTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/weeklyCloseDayTv"/>
+        
+        <EditText android:id="@+id/weeklyCloseDayEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/weeklyCloseDayEditText"/>
+        
+        <TextView android:id="@+id/dailyVisitTimeTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/dailyVisitTimeTv"/>
+        
+        <EditText android:id="@+id/dailyVisitTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/dailyVisitTimeEditText"/>
+        
+        <TextView android:id="@+id/latitudeTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/latitudeTv"/>
+        
+        <EditText android:id="@+id/latitudeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/latitudeEditText"/>
+        
+        <TextView android:id="@+id/langitudeTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/langitudeTv"/>
+        
+        <EditText android:id="@+id/langitudeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/langitudeEditText"/>
+        </LinearLayout>
+        </ScrollView>
+        
+        <Button android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:background="@drawable/button_custom"
+            android:layout_marginBottom="10dp"
+            android:onClick="save"/>
+    
+
+</LinearLayout>

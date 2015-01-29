@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" 
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/place_image_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/place_name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="" 
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    
+    <ScrollView android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="10dp">
+        
+        <TextView android:id="@+id/historicalDescriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/historicalDescriptionTv"/>
+        
+        <TextView android:id="@+id/historicalDescriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/addressTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/addressTv"/>
+        
+        <TextView android:id="@+id/addressView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/districtTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/districtTv"/>
+        
+        <TextView android:id="@+id/districtView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/weeklyCloseDayTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/weeklyCloseDayTv"/>
+        
+        <TextView android:id="@+id/weeklyCloseDayView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/dailyVisitTimeTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/dailyVisitTimeTv"/>
+        
+        <TextView android:id="@+id/dailyVisitTimeView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/latitudeTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/latitudeTv"/>
+        
+        <TextView android:id="@+id/latitudeView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/langitudeTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/langitudeTv"/>
+        
+        <TextView android:id="@+id/langitudeView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"/>
+        
+        <TextView android:id="@+id/googleMapLinkTV"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/googleMapLinkTV"
+            android:textColor="#0000FF"
+            android:gravity="center_horizontal"/>
+        
+        
+    </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>
