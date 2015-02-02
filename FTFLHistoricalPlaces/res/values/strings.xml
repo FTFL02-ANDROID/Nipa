@@ -18,7 +18,7 @@
     <string name="weeklyCloseDayTv">Weekly Close Day</string>
     <string name="dailyVisitTimeTv">Daily Visit Time</string>
     <string name="latitudeTv">Latitude</string>
-    <string name="langitudeTv">Langitude</string>
+    <string name="langitudeTv">Longitude</string>
     <string name="googleMapLinkTV">Show location in Google Map</string>
     
     <!--add more place -->
@@ -32,6 +32,6 @@
     <string name="weeklyCloseDayEditText">Enter weekly close day</string>
     <string name="dailyVisitTimeEditText">Enter daily visit time</string>
     <string name="latitudeEditText">Enter latitude</string>
-    <string name="langitudeEditText">Enter langitude</string>
+    <string name="langitudeEditText">Enter longitude</string>
 
 </resources>

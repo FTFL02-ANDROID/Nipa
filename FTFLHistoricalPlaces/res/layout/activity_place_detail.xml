@@ -16,7 +16,8 @@
             android:id="@+id/place_image_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" 
+            android:contentDescription="@string/app_name"/>
 
         <TextView
             android:id="@+id/place_name_text_view"
@@ -124,14 +125,18 @@
             android:layout_weight="1"
             android:layout_marginBottom="10dp"/>
         
-        <TextView android:id="@+id/googleMapLinkTV"
+        <TextView
+            android:id="@+id/googleMapLinkTV"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:ellipsize="none"
+            android:gravity="center_horizontal"
+            android:inputType="none"
+            android:onClick="viewMap"
             android:text="@string/googleMapLinkTV"
             android:textColor="#0000FF"
-            android:gravity="center_horizontal"/>
-        
+            android:textIsSelectable="true" />
         
     </LinearLayout>
     </ScrollView>

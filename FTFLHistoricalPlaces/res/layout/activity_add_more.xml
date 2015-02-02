@@ -36,7 +36,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/placeNameEditText"/>
+            android:hint="@string/placeNameEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/historicalDescriptionTv"
             android:layout_width="match_parent"
@@ -49,7 +50,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/historicalDescriptionEditText"/>
+            android:hint="@string/historicalDescriptionEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/addressTv"
             android:layout_width="match_parent"
@@ -62,7 +64,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/addressEditText"/>
+            android:hint="@string/addressEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/districtTv"
             android:layout_width="match_parent"
@@ -75,7 +78,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/districtEditText"/>
+            android:hint="@string/districtEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/weeklyCloseDayTv"
             android:layout_width="match_parent"
@@ -88,7 +92,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/weeklyCloseDayEditText"/>
+            android:hint="@string/weeklyCloseDayEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/dailyVisitTimeTv"
             android:layout_width="match_parent"
@@ -101,7 +106,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/dailyVisitTimeEditText"/>
+            android:hint="@string/dailyVisitTimeEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/latitudeTv"
             android:layout_width="match_parent"
@@ -114,7 +120,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/latitudeEditText"/>
+            android:hint="@string/latitudeEditText"
+            android:inputType="text"/>
         
         <TextView android:id="@+id/langitudeTv"
             android:layout_width="match_parent"
@@ -127,7 +134,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="20dp"
-            android:hint="@string/langitudeEditText"/>
+            android:hint="@string/langitudeEditText"
+            android:inputType="text"/>
         </LinearLayout>
         </ScrollView>
         

@@ -5,26 +5,40 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ftfl.ftflhistoricalplaces.DataBase.DatabaseHelper;
+import com.ftfl.ftflhistoricalplaces.constant.Constant;
 import com.ftfl.ftflhistoricalplacesImageAdapter.ImageAdapter;
 import com.ftfl.ftflhistoricalplacesModel.PlaceModel;
 
 public class FTFLHistoricalPlacesDetailActivity extends Activity {
 
-	private int position = 0;
+	private int mPosition = 0;
 	ImageView mPlaceImageView;
-	TextView mPlaceNameTextView, mHistoricalDescriptionTextView,
-			mAddressTextView, mDistrictTextView, mWeeklyCloseDayTextView,
-			mDailyVisitTimeTextView, mLatitudeTextView, mLongitudeTextView;
-	String mPlaceName, mHistoricalDescription, mAddress, mDistrict,
-			mWeeklyCloseDay, mDailyVisitTime, mLatitude, mLongitude;
+	TextView mPlaceNameTextView;
+	TextView mHistoricalDescriptionTextView;
+	TextView mAddressTextView;
+	TextView mDistrictTextView;
+	TextView mWeeklyCloseDayTextView;
+	TextView mDailyVisitTimeTextView;
+	TextView mLatitudeTextView;
+	TextView mLongitudeTextView;
+	int mPlaceID;
+	String mPlaceName;
+	String mHistoricalDescription;
+	String mAddress;
+	String mDistrict;
+	String mWeeklyCloseDay;
+	String mDailyVisitTime;
+	String mLatitude;
+	String mLongitude;
 	ImageAdapter mImageAdapter;
 	DatabaseHelper mDbHelper;
-	PlaceModel place;
+	PlaceModel mPlace;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +46,14 @@ public class FTFLHistoricalPlacesDetailActivity extends Activity {
 		setContentView(R.layout.activity_place_detail);
 
 		Intent i = getIntent();
-		position = i.getExtras().getInt("id");
+		mPosition = i.getExtras().getInt("id");
 		mImageAdapter = new ImageAdapter(this);
 
 		mPlaceImageView = (ImageView) findViewById(R.id.place_image_view);
-		mPlaceImageView.setImageResource(mImageAdapter.mImageArray[position]);
+		mPlaceImageView.setImageResource(mImageAdapter.mImageArray[mPosition]);
 
 		mPlaceNameTextView = (TextView) findViewById(R.id.place_name_text_view);
-		mPlaceNameTextView.setText(mImageAdapter.mName[position]);
+		mPlaceNameTextView.setText(mImageAdapter.mName[mPosition]);
 
 		mHistoricalDescriptionTextView = (TextView) findViewById(R.id.historicalDescriptionView);
 		mAddressTextView = (TextView) findViewById(R.id.addressView);
@@ -51,28 +65,23 @@ public class FTFLHistoricalPlacesDetailActivity extends Activity {
 
 		mDbHelper = new DatabaseHelper(this);
 		ArrayList<PlaceModel> places = mDbHelper.getAllPlaces();
-
+		
+		//get data
 		if (places != null && places.size() > 0) {
-			for (PlaceModel place : places) {
-				mPlaceName = place.getPlaceName();
-				mHistoricalDescription = place.getHistoricalDescription();
-				mAddress = place.getAddress();
-				mDistrict = place.getDistrict();
-				mWeeklyCloseDay = place.getWeeklyCloseDay();
-				mDailyVisitTime = place.getDailyVisitTime();
-				mLatitude = place.getLatitude();
-				mLongitude = place.getLangitude();
-
-				if (mPlaceName == mPlaceNameTextView.getText()) {
-					mHistoricalDescriptionTextView
-							.setText(mHistoricalDescription);
-					mAddressTextView.setText(mAddress);
-					mDistrictTextView.setText(mDistrict);
-					mWeeklyCloseDayTextView.setText(mWeeklyCloseDay);
-					mDailyVisitTimeTextView.setText(mDailyVisitTime);
-					mLatitudeTextView.setText(mLatitude);
-					mLongitudeTextView.setText(mLongitude);
-				} else {
+			for(PlaceModel mPlace : places){
+				mPlaceID=mPlace.getPlacId();
+				mPlaceName = mPlace.getPlaceName();
+				mHistoricalDescription = mPlace.getHistoricalDescription();
+				mAddress = mPlace.getAddress();
+				mDistrict = mPlace.getDistrict();
+				mWeeklyCloseDay = mPlace.getWeeklyCloseDay();
+				mDailyVisitTime = mPlace.getDailyVisitTime();
+				mLatitude = mPlace.getLatitude();
+				mLongitude = mPlace.getLangitude();
+				
+				for(mPlaceID=0;mPlaceID<=places.size();mPlaceID++){
+				
+				//set data
 					mPlaceNameTextView.setText(mPlaceName);
 					mHistoricalDescriptionTextView
 							.setText(mHistoricalDescription);
@@ -84,11 +93,23 @@ public class FTFLHistoricalPlacesDetailActivity extends Activity {
 					mLongitudeTextView.setText(mLongitude);
 				}
 
-			}
+			}	
 		} else {
 			Toast.makeText(this, "No data found", Toast.LENGTH_LONG).show();
 		}
 
+	}
+
+	public void viewMap(View view) {
+		Intent intent = new Intent(FTFLHistoricalPlacesDetailActivity.this,
+				FTFLHistoricalPlacesShowMapActivity.class);
+		Bundle bundle = new Bundle();
+		bundle.putString(Constant.LATITUDE, mPlace.getLatitude());
+		bundle.putString(Constant.LONGITUDE, mPlace.getLangitude());
+		bundle.putString(Constant.PLACENAME, mPlace.getPlaceName());
+		intent.putExtras(bundle);
+		startActivity(intent);
+		
 	}
 
 }

@@ -11,9 +11,14 @@ import com.ftfl.ftflhistoricalplacesModel.PlaceModel;
 
 public class FTFLHistoricalPlacesAddMoreActivity extends Activity {
 
-	EditText mPlaceNameEditText, mHistoricalDescriptionEditText,
-			mAddressEditText, mDistrictEditText, mWeeklyCloseDayEditText,
-			mDailyVisitTimeEditText, mLatitudeEditText, mLongitudeEditText;
+	EditText mPlaceNameEditText;
+	EditText mHistoricalDescriptionEditText;
+	EditText mAddressEditText;
+	EditText mDistrictEditText;
+	EditText mWeeklyCloseDayEditText;
+	EditText mDailyVisitTimeEditText;
+	EditText mLatitudeEditText;
+	EditText mLongitudeEditText;
 
 	DatabaseHelper mDbHelper;
 	PlaceModel mPlace;

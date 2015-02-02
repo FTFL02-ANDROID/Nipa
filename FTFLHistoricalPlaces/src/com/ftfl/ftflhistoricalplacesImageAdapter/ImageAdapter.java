@@ -25,7 +25,7 @@ public class ImageAdapter extends BaseAdapter{
 	           
 	    };
 	    public String[] mName = {
-	          "Maynamati",
+	          "Mainamati",
 	          "Shahid Minar",
 	          "Paribibir Mazar",
 	          "Shat Gombuj Masjid",

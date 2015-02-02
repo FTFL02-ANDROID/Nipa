@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_custom"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <!-- Capture picture button -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:text="@string/intro"
+        android:textStyle="bold" 
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+ 
+ 
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/picture"
+        android:layout_centerInParent="true" />
+    
+     <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/viewButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"/>
+    
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capture"
+        android:layout_above="@id/viewButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:onClick="viewImage"/>
+    
+   
+
+</RelativeLayout>
