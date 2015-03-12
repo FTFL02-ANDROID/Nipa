@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+        
+        
+    <TextView android:id="@+id/btnTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#000066"
+        android:text="Photo of prescription"
+        android:textSize="20sp"
+        android:gravity="center">
+        </TextView>
+    
+    <ImageView android:id="@+id/ivPrescription"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/prescription_icon"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+    
+    <TextView android:id="@+id/tvDoctorName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tvDoctorName"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/viewDoctorName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text=""
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000066"
+        android:gravity="center_vertical"
+        android:onClick="viewDoctorProfile"/>
+    
+    
+    <TextView android:id="@+id/tvAppointmentReason"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tvAppointmentReason"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/viewAppointmentReason"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text=""
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000066"
+        android:gravity="center_vertical"/>
+    
+    
+    <TextView android:id="@+id/tvAppointmentDate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tvAppointmentDate"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/viewAppointmentDate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text=""
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000066"
+        android:gravity="center_vertical"/>
+    
+    
+    <TextView android:id="@+id/tvChamberAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tvChamberAddress"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/viewChamberAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text=""
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:textColor="#000066"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/tvShowChamberAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Show Chamber Address in google map"
+        android:textSize="15sp"
+        android:textColor="#B22222"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:onClick="showMap"/>
+
+</LinearLayout>

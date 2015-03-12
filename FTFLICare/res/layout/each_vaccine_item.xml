@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal" 
+    android:background="#FFFFFF">
+    
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        
+        <TextView android:id="@+id/tvVaccinineName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/tvVaccineName"
+        android:textColor="#000066"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+        <TextView android:id="@+id/tvVaccineDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="@string/tvVaccineDate"
+        android:textColor="#000066"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+        
+        <TextView android:id="@+id/tvVaccineTime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:text="@string/tvVaccineTime"
+        android:textColor="#33FFFF"
+        android:textSize="17sp"
+        android:gravity="center_vertical"/>
+        
+    </LinearLayout>
+        
+    </LinearLayout>
+    
+    <ImageView android:id="@+id/ivAlarm"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:src="@drawable/alarm_on"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+    
+
+</LinearLayout>
+

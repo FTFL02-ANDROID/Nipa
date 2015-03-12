@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FTFL ICare</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ftflcreate_profile">FTFLCreateProfileActivity</string>
+
+    <!-- edit profile -->
+    <string name="tvName">Name</string>
+    <string name="etName">Enter Name</string>
+    <string name="tvGender">Gender</string>
+    <string name="radioButtonMale">Male</string>
+    <string name="radioButtonfemale">Female</string>
+    <string name="tvHeight">Height (cm)</string>
+    <string name="etHeight">Enter Height</string>
+    <string name="tvWeight">Weight (kg)</string>
+    <string name="etWeight">Enter Weight</string>
+    <string name="tvDateOfBirth">DOB</string>
+    <string name="etDateOfBirth">"Date/Month/Year"</string>
+    <string name="title_activity_ftflicare_home">" Home"</string>
+
+    <!-- profile -->
+    <string name="title_activity_ftflicare_profile">" Profile"</string>
+
+    <!-- each today item -->
+    <string name="tvItem">"Item "</string>
+    <string name="title_activity_ftflicare_vaccine_list">Vaccine List</string>
+
+    <!-- each vaccine item -->
+    <string name="tvVaccineName">"Vaccine Name "</string>
+    <string name="tvVaccineDate">"Vaccine Date "</string>
+    <string name="tvVaccineTime">"Vaccine Time "</string>
+    <string name="title_activity_ftflicare_doctor_appointment">"Doctor's Appointment"</string>
+
+    <!-- Add new doctor's appontment -->
+    <string name="tvDoctorName">"Doctor's Name "</string>
+    <string name="etDoctorName">"Enter Doctor's Name "</string>
+    <string name="tvAppointmentReason">"Reason of Appointment "</string>
+    <string name="etAppointmentReason">"Write reason of Appointment "</string>
+    <string name="tvAppointmentDate">"Date of Appointment "</string>
+    <string name="etAppointmentdate">"Enter Date of Appointment "</string>
+    <string name="tvChamberAddress">"Address of Chamber "</string>
+    <string name="etChamberAddress">"Enter address of Chamber "</string>
+    <string name="title_activity_ftflicare_appointment_detail">Appointment Detail</string>
+    <string name="title_activity_ftflicare_doctor_profile">"Doctor's Profile"</string>
+
+    <!-- Create doctor's profile -->
+    <string name="tvSpecialistOf">"Specialist of "</string>
+    <string name="tvEmail">"Email "</string>
+    <string name="tvContact">"Contact no. "</string>
+    <string name="title_activity_ftflicare_gallery">ICare Gallery</string>
+    <string name="title_activity_ftflicare_edit_doctor_profile">"Edit Doctor's Profile"</string>
+
+    <!-- Edit doctor's profile -->
+    <string name="etSpecialistOf">"Enter which Specialist of "</string>
+    <string name="etEmail">"Enter Doctor's Email "</string>
+    <string name="etContact">"Enter Doctor's Contact no. "</string>
+    <string name="title_activity_ftflicare_diet_chart">Diet Chart</string>
+    <string name="title_activity_ftflicare_emergency_contact">Help Line</string>
+    <string name="title_activity_ftflicare_settings">Medical Centers Address</string>
+
+    <!-- add new vaccine -->
+    <string name="btnSave">"Save"</string>
+    <string name="title_activity_ftflicare_add_new_vaccine">Add New Vaccination</string>
+    <string name="cbSetAlam">"Set Alarm"</string>
+
+    <!-- Edit vaccine -->
+    <string name="title_activity_ftflicare_edit_vaccine">Edit Vaccination</string>
+    <string name="action_edit_vaccination">Edit</string>
+    <string name="title_activity_ftflicare_upcoming_diet">Upcoming Diet</string>
+
+    <!-- add new diet -->
+    <string name="addDietTextView">Add Diet Item</string>
+    <string name="feastNameText">Meal Name</string>
+    <string name="feastNameView">Enter meal name</string>
+    <string name="pickDayTextView">"Pick a Day"</string>
+    <string name="pickTimeTextView">"Pick a Time"</string>
+    <string name="dateEditText">"Select date"</string>
+    <string name="timeEditText">"Select time"</string>
+    <string name="menuView">"Add menu"</string>
+    <string name="alarmCheckBox">"Set alarm"</string>
+    <string name="addDietChartButton">"Add Diet"</string>
+    <string name="menuText">"Item "</string>
+    <string name="gallery">"ICare Gallery "</string>
+    <string name="myProfile">My Diet Profile</string>
+    <string name="Update">Update</string>
+    <string name="time">Time</string>
+    <string name="manu">Feast menu</string>
+    <string name="food">Event Name</string>
+    <string name="history">History</string>
+    <string name="todayDiet">"Today's Diet Chart"</string>
+    <string name="upComingDiet">Upcoming Diet Chart</string>
+    <string name="image">Loading!!!</string>
+    <string name="createDiet">Create Diet Chart</string>
+
+    <!-- create diet -->
+
+    <string name="createDietChart">Create Diet Chart</string>
+    <string name="myfeastName">Feast name</string>
+    <string name="myfeastManu">Feast menu</string>
+    <string name="alarm">Set Alarm</string>
+    <string name="buttonSubmit">Save</string>
+    <string name="title_activity_ftflicare_create_diet">Create Diet</string>
+    <string name="title_activity_ftflicare_daily_diet">Daily Diet</string>
+    <string name="title_activity_ftflicare_google_map">FTFLICareGoogleMapActivity</string>
+
+</resources>

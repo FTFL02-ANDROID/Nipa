@@ -1,0 +1,69 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp" 
+    android:layout_marginRight="10dp">
+
+    <TextView android:id="@+id/tvVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/tvVaccineName" 
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"/>
+    
+    <EditText android:id="@+id/etVaccineName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:textColor="#0404B4"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/tvVaccineDate"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/tvVaccineDate"
+        android:textSize="15sp"
+        android:textColor="#000000" 
+        android:gravity="center_vertical"/>
+    
+    <EditText android:id="@+id/etVaccineDate"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="date"
+        android:textSize="15sp"
+        android:textColor="#0404B4"
+        android:gravity="center_vertical"/>
+    
+    <TextView android:id="@+id/tvVaccineTime"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/tvVaccineTime"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical" />
+    
+    <EditText android:id="@+id/etVaccineTime"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:inputType="time"
+        android:textSize="15sp"
+        android:textColor="#0404B4"
+        android:gravity="center_vertical"/>
+    
+    <CheckBox android:id="@+id/cbSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Set Alarm"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>
+</ScrollView>
